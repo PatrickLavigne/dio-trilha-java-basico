@@ -8,14 +8,6 @@ public class LogicaCondicionadores{
 
         int i1 = 10;
         int i2 = 20;
-        float f1 = 4.5f;
-        float f2 = 3.5f;
-        char c1 = 'x';
-        char c2 = 'y';
-        String s1 = "Fulano";
-        String s2 = "Fulano";
-        boolean b1 = true;
-        boolean b2 = false;
 
         if(i1==i2){
             System.out.println("Não é verdadeiro");
@@ -28,6 +20,39 @@ public class LogicaCondicionadores{
         }
         if (i1 <= i2){
             System.out.println("É maior!");
+
+        float salarioMinimo = 1.200f;
+        float salarioFuncionario = 1.500f;
+
+        if ((salarioMinimo > salarioFuncionario) && (salarioMinimo > salarioFuncionario) ){
+            System.out.println("Vai receber bolsa auxilio");
+        }
+        if ((salarioMinimo < salarioFuncionario) && (salarioMinimo < salarioFuncionario)){
+            System.out.println("Não vai receber auxilio");
+        }
+        }
+        int dia = 28;
+
+        if ((dia >= 1) && ( dia <= 10)){
+            System.out.println("Está longe do aniversário da Ísis. ");
+        } else if ((dia >=11 )&&(dia <= 20 )){
+            System.out.println("Está longe do aniversário da Ísis!");
+        } else if ((dia >=21) && (dia <=31)){
+            System.out.println(" ALEGRIA Estamos na semana do aniversário da Ísis!");
+        }
+        
+        switch (dia){
+            
+            case 10:
+                System.out.println("Dia 10, não é aniversário da Ísis!");
+                break;
+            case 20:
+                System.out.println("Dia 20, estamso perto do aniversário da Ísis!");
+                break;
+            case 28:
+                System.out.println("Parabéns filha, 1 aninho já");
+                break;
+        }
+
         }
     }
-}
